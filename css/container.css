@@ -1,8 +1,6 @@
 .container {
-  outline: 1px solid red;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: aqua;
 }
 
 @media screen and (min-width: 480px) {
@@ -16,13 +14,11 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: rgb(35, 147, 195);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: rgb(156, 19, 124);
   }
 }
