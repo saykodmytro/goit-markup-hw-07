@@ -1,0 +1,43 @@
+:root {
+  --color-logo: #4d5ae5;
+  --color-text-head: #434455;
+  --color-text-sec: #2e2f42;
+  --color-white-light: #f4f4fd;
+  --color-text-hover-focus: #404bbf;
+  --bg-color-head: #ffffff;
+  --color-border: #e7e9fc;
+  --color-svg-logo-cust: #8e8f99;
+  --color-svg-social-hov: #31d0aa;
+  --trans-time-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
