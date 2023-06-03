@@ -79,18 +79,6 @@ body {
 
 /***** BG - Mobile *****/
 
-.hero {
-  background-color: var(--color-text-sec);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url("../images/bg/bg-mobile@1x.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -100,6 +88,7 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/bg/bg-mobile@2x.jpg");
+    max-width: 428px;
   }
 }
 
@@ -108,6 +97,19 @@ body {
 /* ******* RULES (0px - 767px) ******** */
 
 @media screen and (max-width: 767px) {
+  .hero {
+    background-color: var(--color-text-sec);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bg/bg-mobile@1x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 428px;
+  }
+
   .container {
     max-width: 428px;
   }
@@ -874,6 +876,7 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/bg/bg-tablet@1x.jpg");
+    max-width: 768px;
   }
 }
 
@@ -886,6 +889,7 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/bg/bg-tablet@2x.jpg");
+    max-width: 768px;
   }
 }
 
@@ -1055,6 +1059,7 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/bg/bg-desctop@1x.jpg");
+    max-width: 1158px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
@@ -1066,6 +1071,7 @@ body {
           rgba(46, 47, 66, 0.7)
         ),
         url("../images/bg/bg-desctop@2x.jpg");
+      max-width: 1158px;
     }
   }
 }
