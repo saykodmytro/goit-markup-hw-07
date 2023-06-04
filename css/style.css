@@ -73,7 +73,9 @@ body {
   font-style: normal;
 }
 
+.link-adress,
 .link-adress:hover,
+.link-adress,
 .link-adress:focus {
   color: var(--color-text-hover-focus);
 }
@@ -975,8 +977,6 @@ body {
 }
 
 /* ********************* Desktop (1157px +) ********************** */
-
-/***** /BG *****/
 
 @media screen and (min-width: 1158px) {
   .container {
