@@ -81,36 +81,9 @@ body {
 
 /* *****************************  FIRST-MOBILE  ******************************* */
 
-/***** BG - Mobile *****/
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/bg/bg-mobile@2x.jpg");
-    max-width: 428px;
-  }
-}
-
-/***** /BG - Mobile *****/
-
 /* ******* RULES (0px - 767px) ******** */
 
 @media screen and (max-width: 767px) {
-  .hero {
-    background-color: var(--color-text-sec);
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/bg/bg-mobile@1x.jpg");
-    max-width: 428px;
-  }
-
   .container {
     max-width: 428px;
   }
@@ -189,13 +162,6 @@ body {
 }
 
 /* ******* /Rules (0px - 767px) ******** */
-
-.hero {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 112px 0;
-}
 
 .page-header {
   padding-top: 24px;
@@ -816,14 +782,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* .cont-form-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-} */
-
 .cont-form-inp-footer {
   resize: none;
   outline: none;
@@ -874,34 +832,6 @@ body {
 
 /* ********************* Tablet (768px - 1157px) ********************** */
 
-/***** BG - Tablet *****/
-
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/bg/bg-tablet@1x.jpg");
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/bg/bg-tablet@2x.jpg");
-    max-width: 768px;
-  }
-}
-
-/***** /BG - Tablet *****/
-
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .page-header {
     padding-top: 16px;
@@ -910,6 +840,10 @@ body {
 
   .container {
     width: 768px;
+  }
+
+  .container-footer {
+    padding-left: 108px;
   }
 
   .mobile-menu_btn-open {
@@ -1042,36 +976,11 @@ body {
 
 /* ********************* Desktop (1157px +) ********************** */
 
-/***** BG - Desctop *****/
-
-@media screen and (min-width: 1158px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/bg/bg-desctop@1x.jpg");
-  }
-
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
-    screen and (min-resolution: 192dpi) and (min-width: 1158px),
-    screen and (min-resolution: 2dppx) and (min-width: 1158px) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/bg/bg-desctop@2x.jpg");
-    }
-  }
-}
-/***** /BG - Desctop *****/
-
 /***** /BG *****/
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1211,7 +1120,6 @@ body {
     display: flex;
     align-items: baseline;
     margin: 0 auto;
-    padding-left: 156px;
   }
 
   .container-foot-logo {
