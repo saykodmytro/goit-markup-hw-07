@@ -983,7 +983,6 @@ body {
     align-items: baseline;
     flex-wrap: wrap;
     gap: 72px 24px;
-    padding-left: 108px;
   }
 
   .container-foot-logo {
@@ -1170,6 +1169,7 @@ body {
   .menu-our-work {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 24px;
   }
 
@@ -1180,6 +1180,8 @@ body {
 
   .menu-our-team {
     display: flex;
+    align-items: center;
+    justify-content: center;
     column-gap: 24px;
   }
 
@@ -1190,6 +1192,8 @@ body {
 
   .menu-cust-svg {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
   }
 
@@ -1207,7 +1211,7 @@ body {
     display: flex;
     align-items: baseline;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 156px;
   }
 
   .container-foot-logo {
