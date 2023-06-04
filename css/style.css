@@ -69,6 +69,10 @@ body {
   color: var(--color-text-hover-focus);
 }
 
+.address-header {
+  font-style: normal;
+}
+
 .link-adress:hover,
 .link-adress:focus {
   color: var(--color-text-hover-focus);
@@ -104,9 +108,6 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/bg/bg-mobile@1x.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     max-width: 428px;
   }
 
@@ -120,10 +121,6 @@ body {
 
   .address-header {
     display: none;
-  }
-
-  .container-hero-mobile-pading {
-    padding: 112px 54px;
   }
 
   .icon-container-skills {
@@ -156,7 +153,7 @@ body {
   }
 
   .list-item-cust {
-    width: calc((100% - 48px) / 2);
+    width: 190px;
     height: 88px;
   }
 
@@ -192,6 +189,13 @@ body {
 }
 
 /* ******* /Rules (0px - 767px) ******** */
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 112px 0;
+}
 
 .page-header {
   padding-top: 24px;
@@ -244,6 +248,7 @@ body {
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
 }
 
 .mobile-menu-container-fixed.is-open {
@@ -296,7 +301,11 @@ body {
 }
 
 .mobile-menu-nav {
-  padding-bottom: 284px;
+  margin-bottom: 284px;
+}
+
+.mobile-menu-address {
+  margin-bottom: 48px;
 }
 
 .mobile-link-adress-tel {
@@ -321,12 +330,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-text-head);
   display: block;
-  padding-bottom: 48px;
 }
 
 .mobile-menu-social-svg {
   display: flex;
-  justify-content: center;
   gap: 56px;
 }
 
@@ -667,13 +674,13 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-text-sec);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .description-our-team {
   text-align: center;
   color: var(--color-text-head);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 /****** SVG - Our Team  ******/
@@ -731,7 +738,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-text-sec);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 /****** SVG - Custumers ******/
@@ -920,15 +927,13 @@ body {
     color: var(--color-text-head);
   }
 
-  .container-hero-mobile-pading {
-    padding: 112px 136px;
-  }
-
   .title-page {
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
     max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .menu-skills {
@@ -954,21 +959,11 @@ body {
     display: none;
   }
 
-  .container-our-team-padding {
-    padding-left: 108px;
-    padding-right: 108px;
-  }
-
   .menu-our-team {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 64px 24px;
-  }
-
-  .container-cust-padding {
-    padding-left: 108px;
-    padding-right: 108px;
   }
 
   .menu-cust-svg {
@@ -979,7 +974,7 @@ body {
   }
 
   .list-item-cust {
-    width: calc((100% - 48px) / 3);
+    width: 168px;
     height: 88px;
   }
 
@@ -1052,14 +1047,11 @@ body {
 
 @media screen and (min-width: 1158px) {
   .hero {
-    max-width: 100vw;
-    padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/bg/bg-desctop@1x.jpg");
-    max-width: 1158px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
@@ -1071,7 +1063,6 @@ body {
           rgba(46, 47, 66, 0.7)
         ),
         url("../images/bg/bg-desctop@2x.jpg");
-      max-width: 1158px;
     }
   }
 }
@@ -1081,7 +1072,7 @@ body {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1440px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1117,6 +1108,7 @@ body {
   }
 
   .hero {
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -1168,7 +1160,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--color-text-head);
   }
 
   .our-work {
@@ -1202,7 +1194,7 @@ body {
   }
 
   .list-item-cust {
-    width: calc((100% - 5 * 24px) / 6);
+    width: 168px;
     height: 88px;
   }
 
