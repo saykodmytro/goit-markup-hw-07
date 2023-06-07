@@ -1,0 +1,219 @@
+/*********** Modal-Window ***********/
+
+.modal {
+  max-width: 392px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity var(--trans-time-cubic),
+    visibility var(--trans-time-cubic);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 72px 24px 24px 24px;
+  transform: translate(-50%, -50%);
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  min-height: 576px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn {
+  padding: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  background-color: var(--color-border);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: background-color var(--trans-time-cubic),
+    border var(--trans-time-cubic);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--color-text-hover-focus);
+  border: none;
+}
+
+.svg-modal-close-btn {
+  transition: fill var(--trans-time-cubic);
+}
+
+.modal-close-btn:hover .svg-modal-close-btn,
+.modal-close-btn:focus .svg-modal-close-btn {
+  fill: var(--bg-color-head);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.desc-title-modal-form {
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--color-text-sec);
+}
+
+.form-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-svg-logo-cust);
+  margin-bottom: 4px;
+}
+
+.container-lable {
+  margin-bottom: 8px;
+}
+
+.contact-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  background-color: transparent;
+  outline: transparent;
+  border-radius: 4px;
+  padding-left: 38px;
+
+  transition: border-color var(--trans-time-cubic);
+}
+
+.contact-form-input:focus {
+  border-color: var(--color-logo);
+}
+
+.svg-cont-input {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill var(--trans-time-cubic);
+}
+
+.contact-form-input:focus + .svg-cont-input {
+  fill: var(--color-logo);
+}
+
+.container-input-svg {
+  display: block;
+  position: relative;
+}
+
+.container-lable-textarea {
+  margin-bottom: 16px;
+}
+
+.contact-textarea-form-input {
+  width: 100%;
+  padding: 8px 16px;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  background-color: transparent;
+  outline: transparent;
+  border-radius: 4px;
+  resize: none;
+  transition: border-color var(--trans-time-cubic);
+}
+
+.contact-textarea-form-input:focus {
+  border-color: var(--color-logo);
+}
+
+.container-chekbox {
+  margin-bottom: 24px;
+}
+
+.form-label-chekbox {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-svg-logo-cust);
+}
+
+.container-checkbox-svg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-text-sec);
+  border-radius: 2px;
+  fill: transparent;
+  cursor: pointer;
+}
+
+.chek-box:checked + .form-label-chekbox > .container-checkbox-svg {
+  background-color: var(--color-text-hover-focus);
+  border: none;
+  fill: var(--bg-color-head);
+  border-color: var(--color-text-hover-focus);
+}
+
+.accept-link {
+  color: var(--color-logo);
+}
+
+.visually-hidden {
+  position: absolute;
+  appearance: none;
+}
+
+.btn-form-submit {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  background: var(--color-logo);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--bg-color-head);
+
+  transition: background-color var(--trans-time-cubic);
+}
+
+.btn-form-submit:hover,
+.btn-form-submit:focus {
+  background-color: var(--color-text-hover-focus);
+}
+
+/*********** /Modal-Window ***********/
