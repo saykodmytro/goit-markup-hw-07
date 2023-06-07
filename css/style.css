@@ -230,6 +230,9 @@ body {
   padding-top: 80px;
   padding-left: 40px;
   padding-bottom: 40px;
+  height: 796px;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu_btn-close {
@@ -269,7 +272,7 @@ body {
 }
 
 .mobile-menu-nav {
-  margin-bottom: 284px;
+  margin-bottom: auto;
 }
 
 .mobile-menu-address {
