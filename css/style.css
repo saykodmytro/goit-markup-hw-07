@@ -181,7 +181,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-logo);
-  margin-right: 76px;
 }
 
 .nav-page .logo-chank {
@@ -804,6 +803,10 @@ body {
     display: inline-block;
     color: var(--color-text-head);
     transition: color var(--trans-time-cubic);
+  }
+
+  .link-logo {
+    margin-right: 76px;
   }
 
   .underlining::after {
