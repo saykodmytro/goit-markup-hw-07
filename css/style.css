@@ -230,7 +230,8 @@ body {
   padding-top: 80px;
   padding-left: 40px;
   padding-bottom: 40px;
-  height: 796px;
+  height: inherit;
+  /* min-height: 796px; */
   display: flex;
   flex-direction: column;
 }
