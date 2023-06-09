@@ -62,13 +62,6 @@
   color: var(--color-text-sec);
 }
 
-.container {
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* *****************************  FIRST-MOBILE  ************************ */
 
 @media screen and (max-width: 767px) {
